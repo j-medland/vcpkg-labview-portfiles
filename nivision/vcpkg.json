@@ -1,0 +1,8 @@
+{
+  "name": "nivision",
+  "version-string": "1.0.0",
+  "homepage": "",
+  "description": "NI's vision libraries",
+  "default-features": [],
+  "features": []
+}

@@ -1,0 +1,14 @@
+set(NIVOCUS_PKG_NAME "nivision-opencv-utilities-system")
+
+get_filename_component(_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+get_filename_component(NIOCVUS_INCLUDE_DIRS  "${_DIR}/../../include" ABSOLUTE)
+get_filename_component(NIOCVUS_DYNAMIC_LIB_PATH "${_DIR}/../../bin)" ABSOLUTE)
+get_filename_component(NIOCVUS_STATIC_LIB_PATH "${_DIR}/../../lib"  ABSOLUTE)
+
+
+set(${NIVOCUS_PKG_NAME}_FOUND TRUE)
+set(${NIVOCUS_PKG_NAME}_LIBRARIES "${NIOCVUS_STATIC_LIB_PATH}/nivisext.lib")
+set(${NIVOCUS_PKG_NAME}_INCLUDE_DIRS ${NIOCVUS_INCLUDE_DIRS})
+set(${NIVOCUS_PKG_NAME}_DYNAMIC_LIB_PATH ${NIOCVUS_DYNAMIC_LIB_PATH})
+set(${NIVOCUS_PKG_NAME}_STATIC_LIB_PATH ${NIOCVUS_STATIC_LIB_PATH})

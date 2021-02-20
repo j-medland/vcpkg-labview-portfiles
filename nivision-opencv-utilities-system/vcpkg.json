@@ -1,0 +1,10 @@
+{
+  "name": "nivision-opencv-utilities-system",
+  "version-string": "1.0.0.47",
+  "homepage": "https://www.ni.com/en-gb/innovations/white-papers/16/developing-vision-applications-using-opencv-and-ni-vision.html",
+  "description": "NI Vision OpenCV Utilities System - headers and libraries",
+  "dependencies": [],
+
+  "default-features": [],
+  "features": []
+}

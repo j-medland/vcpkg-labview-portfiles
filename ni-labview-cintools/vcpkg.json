@@ -1,0 +1,8 @@
+{
+  "name": "ni-labview-2020-cintools",
+  "version-string": "1.0.0",
+  "homepage": "",
+  "description": "NI's cintools provided with LabVIEW 2020",
+  "default-features": [],
+  "features": []
+}
