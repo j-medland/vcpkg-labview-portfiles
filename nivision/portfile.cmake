@@ -4,13 +4,15 @@ if(VCPKG_TARGET_IS_WINDOWS)
     # Get the top level directory to copy files from
     file(TO_NATIVE_PATH "C:/Program Files (x86)/National Instruments/Vision" NIVISION_ROOT)
     # header files
-    file(INSTALL "${NIVISION_ROOT}/" DESTINATION "${CURRENT_PACKAGES_DIR}/Include" FILES_MATCHING PATTERN "*.h")
+    file(INSTALL "${NIVISION_ROOT}/Include/" DESTINATION "${CURRENT_PACKAGES_DIR}/include" FILES_MATCHING PATTERN "*.h")
     # lib
-    if(VCPKG_TARGET_ARCHITECTURE STREQUAL x64)
+    if (VCPKG_TARGET_ARCHITECTURE STREQUAL x64)
         set(LIB_DIR_NAME_APPEND "64")
-    else
+    else ()
         set(LIB_DIR_NAME_APPEND "")
-    file(INSTALL "${NIVISION_ROOT}/" DESTINATION "${CURRENT_PACKAGES_DIR}/Lib/MSVC${LIB_DIR_NAME_APPEND}" FILES_MATCHING PATTERN "*.lib")
+    endif ()
+    
+    file(INSTALL "${NIVISION_ROOT}/Lib/MSVC${LIB_DIR_NAME_APPEND}/" DESTINATION "${CURRENT_PACKAGES_DIR}/lib" FILES_MATCHING PATTERN "*.lib")
 
 #elseif (VCPKG_TARGET_IS_LINUX)
     #so
